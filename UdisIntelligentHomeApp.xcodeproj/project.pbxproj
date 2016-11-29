@@ -1,0 +1,1180 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8607A47F1D9CFEEE00E46F18 /* HMDeviceListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8607A47E1D9CFEEE00E46F18 /* HMDeviceListCell.m */; };
+		860B971D1DC99110000997E2 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860B971A1DC99110000997E2 /* MOBFoundation.framework */; };
+		860B971E1DC99110000997E2 /* MOBFoundationEx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860B971B1DC99110000997E2 /* MOBFoundationEx.framework */; };
+		860B971F1DC99110000997E2 /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 860B971C1DC99110000997E2 /* SMS_SDK.framework */; };
+		862CB51A1D66E598001EA6F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 862CB5191D66E598001EA6F8 /* main.m */; };
+		862CB51D1D66E598001EA6F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 862CB51C1D66E598001EA6F8 /* AppDelegate.m */; };
+		862CB5201D66E598001EA6F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862CB51F1D66E598001EA6F8 /* ViewController.m */; };
+		862CB5251D66E598001EA6F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 862CB5241D66E598001EA6F8 /* Assets.xcassets */; };
+		862CB5281D66E598001EA6F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 862CB5261D66E598001EA6F8 /* LaunchScreen.storyboard */; };
+		862CB5331D66E598001EA6F8 /* UdisIntelligentHomeAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 862CB5321D66E598001EA6F8 /* UdisIntelligentHomeAppTests.m */; };
+		862CB53E1D66E598001EA6F8 /* UdisIntelligentHomeAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 862CB53D1D66E598001EA6F8 /* UdisIntelligentHomeAppUITests.m */; };
+		862CB5511D66E65B001EA6F8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862CB5501D66E65B001EA6F8 /* MainViewController.m */; };
+		862CB5541D66E68C001EA6F8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862CB5531D66E68C001EA6F8 /* LoginViewController.m */; };
+		862CB5571D66E703001EA6F8 /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862CB5561D66E703001EA6F8 /* WelcomeViewController.m */; };
+		862CB55A1D66E871001EA6F8 /* PersonalCentreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862CB5591D66E871001EA6F8 /* PersonalCentreViewController.m */; };
+		862CB55E1D66F42A001EA6F8 /* MyUtiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 862CB55D1D66F42A001EA6F8 /* MyUtiles.m */; };
+		862CB5641D66FE22001EA6F8 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 862CB5631D66FE22001EA6F8 /* RegisterViewController.m */; };
+		862CB5691D670A34001EA6F8 /* arrow_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 862CB5681D670A34001EA6F8 /* arrow_left.png */; };
+		866E39121DA898F900C15DD7 /* ChangeUserNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866E39111DA898F900C15DD7 /* ChangeUserNameViewController.m */; };
+		866E39151DA89A7800C15DD7 /* CheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866E39141DA89A7800C15DD7 /* CheckViewController.m */; };
+		866E391F1DAB466600C15DD7 /* HMSearchDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 866E39181DAB466600C15DD7 /* HMSearchDeviceManager.m */; };
+		866E39201DAB466600C15DD7 /* HMSearchDeviceVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 866E391A1DAB466600C15DD7 /* HMSearchDeviceVc.m */; };
+		866E39211DAB466600C15DD7 /* HMSearchDeviceVc.xib in Resources */ = {isa = PBXBuildFile; fileRef = 866E391B1DAB466600C15DD7 /* HMSearchDeviceVc.xib */; };
+		866E39221DAB466600C15DD7 /* HMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 866E391D1DAB466600C15DD7 /* HMTableViewCell.m */; };
+		866E39231DAB466600C15DD7 /* HMTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 866E391E1DAB466600C15DD7 /* HMTableViewCell.xib */; };
+		867AD6711D6A87A2009393AE /* HomeMateSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867AD6701D6A87A2009393AE /* HomeMateSDK.framework */; };
+		867AD6811D6BED99009393AE /* udis.png in Resources */ = {isa = PBXBuildFile; fileRef = 867AD67E1D6BED99009393AE /* udis.png */; };
+		867AD6821D6BED99009393AE /* guide2.png in Resources */ = {isa = PBXBuildFile; fileRef = 867AD67F1D6BED99009393AE /* guide2.png */; };
+		867AD6831D6BED99009393AE /* udislogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 867AD6801D6BED99009393AE /* udislogo.png */; };
+		867AD6C01D6C24E5009393AE /* Register2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 867AD6BF1D6C24E5009393AE /* Register2ViewController.m */; };
+		867AD6C21D6C3D04009393AE /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 867AD6C11D6C3D04009393AE /* libsqlite3.tbd */; };
+		867AD6C91D6C3DF9009393AE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 867AD6C81D6C3DF9009393AE /* libz.tbd */; };
+		867AD6CB1D6C3E08009393AE /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 867AD6CA1D6C3E08009393AE /* libicucore.tbd */; };
+		867AD6CD1D6C3E13009393AE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867AD6CC1D6C3E13009393AE /* MessageUI.framework */; };
+		867AD6CF1D6C3E2F009393AE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867AD6CE1D6C3E2F009393AE /* JavaScriptCore.framework */; };
+		867AD6D11D6C3E51009393AE /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 867AD6D01D6C3E51009393AE /* libstdc++.tbd */; };
+		86831BE61D767991006AD408 /* FPWUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86831BE51D767991006AD408 /* FPWUserViewController.m */; };
+		86831BE91D767A8E006AD408 /* FPWTestNumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86831BE81D767A8E006AD408 /* FPWTestNumViewController.m */; };
+		86831BEC1D767F77006AD408 /* ResetPassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86831BEB1D767F77006AD408 /* ResetPassWordViewController.m */; };
+		86831BEF1D77D6D1006AD408 /* AddDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86831BEE1D77D6D1006AD408 /* AddDeviceViewController.m */; };
+		86831BF21D780DFD006AD408 /* HMDeviceControlManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 86831BF11D780DFD006AD408 /* HMDeviceControlManager.m */; };
+		86831BF81D780E21006AD408 /* HMDeviceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86831BF71D780E21006AD408 /* HMDeviceDetailViewController.m */; };
+		86831BFB1D780E68006AD408 /* HMTimerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86831BFA1D780E68006AD408 /* HMTimerListViewController.m */; };
+		86831BFE1D780E7C006AD408 /* HMFloorSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86831BFD1D780E7B006AD408 /* HMFloorSettingsViewController.m */; };
+		86831C021D780FA6006AD408 /* HMSwitchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 86831C011D780FA6006AD408 /* HMSwitchTableViewCell.m */; };
+		86831C051D780FC8006AD408 /* HMAddEditTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86831C041D780FC8006AD408 /* HMAddEditTimerViewController.m */; };
+		8684AC671D6EF154005AC814 /* dq@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8684AC651D6EF154005AC814 /* dq@2x.png */; };
+		8684AC681D6EF154005AC814 /* zb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8684AC661D6EF154005AC814 /* zb@2x.png */; };
+		8684AC6E1D6FCFFC005AC814 /* NSString+HM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8684AC6B1D6FCFFC005AC814 /* NSString+HM.m */; };
+		8684AC6F1D6FCFFC005AC814 /* UIViewController+HM.m in Sources */ = {isa = PBXBuildFile; fileRef = 8684AC6D1D6FCFFC005AC814 /* UIViewController+HM.m */; };
+		8684AC731D6FD00A005AC814 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8684AC721D6FD00A005AC814 /* MBProgressHUD.m */; };
+		8684AC751D6FD681005AC814 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8684AC741D6FD681005AC814 /* libsqlite3.0.tbd */; };
+		8684AC7C1D7007CE005AC814 /* PresonCenterUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8684AC7B1D7007CE005AC814 /* PresonCenterUserViewController.m */; };
+		8684AC801D700AB9005AC814 /* MyHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8684AC7F1D700AB9005AC814 /* MyHostViewController.m */; };
+		8684AC831D700AD1005AC814 /* ShareHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8684AC821D700AD1005AC814 /* ShareHostViewController.m */; };
+		8684AC861D700B07005AC814 /* ChangePassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8684AC851D700B07005AC814 /* ChangePassWordViewController.m */; };
+		8684AC8A1D73C381005AC814 /* TestNumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8684AC891D73C381005AC814 /* TestNumViewController.m */; };
+		869B93151DB47F3900361BBB /* ControlDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 869B93141DB47F3900361BBB /* ControlDeviceViewController.m */; };
+		869B93181DB4A1DF00361BBB /* ZLAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 869B93171DB4A1DF00361BBB /* ZLAlertView.m */; };
+		86A62F4F1DDC23AD0044BD31 /* HMControlDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86A62F4E1DDC23AD0044BD31 /* HMControlDeviceViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		862CB52F1D66E598001EA6F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 862CB50D1D66E598001EA6F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 862CB5141D66E598001EA6F8;
+			remoteInfo = UdisIntelligentHomeApp;
+		};
+		862CB53A1D66E598001EA6F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 862CB50D1D66E598001EA6F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 862CB5141D66E598001EA6F8;
+			remoteInfo = UdisIntelligentHomeApp;
+		};
+		867AD6A11D6C2434009393AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 862CB50D1D66E598001EA6F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 867AD6871D6C2434009393AE;
+			remoteInfo = Login2ViewController;
+		};
+		867AD6AC1D6C2434009393AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 862CB50D1D66E598001EA6F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 867AD6871D6C2434009393AE;
+			remoteInfo = Login2ViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8607A47D1D9CFEEE00E46F18 /* HMDeviceListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMDeviceListCell.h; sourceTree = "<group>"; };
+		8607A47E1D9CFEEE00E46F18 /* HMDeviceListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMDeviceListCell.m; sourceTree = "<group>"; };
+		860B971A1DC99110000997E2 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
+		860B971B1DC99110000997E2 /* MOBFoundationEx.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundationEx.framework; sourceTree = "<group>"; };
+		860B971C1DC99110000997E2 /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		862CB5151D66E598001EA6F8 /* UdisIntelligentHomeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UdisIntelligentHomeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		862CB5191D66E598001EA6F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		862CB51B1D66E598001EA6F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		862CB51C1D66E598001EA6F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		862CB51E1D66E598001EA6F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		862CB51F1D66E598001EA6F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		862CB5241D66E598001EA6F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		862CB5271D66E598001EA6F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		862CB5291D66E598001EA6F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		862CB52E1D66E598001EA6F8 /* UdisIntelligentHomeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UdisIntelligentHomeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		862CB5321D66E598001EA6F8 /* UdisIntelligentHomeAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UdisIntelligentHomeAppTests.m; sourceTree = "<group>"; };
+		862CB5341D66E598001EA6F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		862CB5391D66E598001EA6F8 /* UdisIntelligentHomeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UdisIntelligentHomeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		862CB53D1D66E598001EA6F8 /* UdisIntelligentHomeAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UdisIntelligentHomeAppUITests.m; sourceTree = "<group>"; };
+		862CB53F1D66E598001EA6F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		862CB54F1D66E65B001EA6F8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		862CB5501D66E65B001EA6F8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		862CB5521D66E68C001EA6F8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		862CB5531D66E68C001EA6F8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		862CB5551D66E703001EA6F8 /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		862CB5561D66E703001EA6F8 /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		862CB5581D66E871001EA6F8 /* PersonalCentreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalCentreViewController.h; sourceTree = "<group>"; };
+		862CB5591D66E871001EA6F8 /* PersonalCentreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalCentreViewController.m; sourceTree = "<group>"; };
+		862CB55C1D66F42A001EA6F8 /* MyUtiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUtiles.h; sourceTree = "<group>"; };
+		862CB55D1D66F42A001EA6F8 /* MyUtiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUtiles.m; sourceTree = "<group>"; };
+		862CB5621D66FE22001EA6F8 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = ../ViewControllers/RegisterViewController.h; sourceTree = "<group>"; };
+		862CB5631D66FE22001EA6F8 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = ../ViewControllers/RegisterViewController.m; sourceTree = "<group>"; };
+		862CB5681D670A34001EA6F8 /* arrow_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_left.png; sourceTree = "<group>"; };
+		866E39101DA898F900C15DD7 /* ChangeUserNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeUserNameViewController.h; sourceTree = "<group>"; };
+		866E39111DA898F900C15DD7 /* ChangeUserNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeUserNameViewController.m; sourceTree = "<group>"; };
+		866E39131DA89A7800C15DD7 /* CheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckViewController.h; sourceTree = "<group>"; };
+		866E39141DA89A7800C15DD7 /* CheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckViewController.m; sourceTree = "<group>"; };
+		866E39171DAB466600C15DD7 /* HMSearchDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSearchDeviceManager.h; sourceTree = "<group>"; };
+		866E39181DAB466600C15DD7 /* HMSearchDeviceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSearchDeviceManager.m; sourceTree = "<group>"; };
+		866E39191DAB466600C15DD7 /* HMSearchDeviceVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSearchDeviceVc.h; sourceTree = "<group>"; };
+		866E391A1DAB466600C15DD7 /* HMSearchDeviceVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSearchDeviceVc.m; sourceTree = "<group>"; };
+		866E391B1DAB466600C15DD7 /* HMSearchDeviceVc.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMSearchDeviceVc.xib; sourceTree = "<group>"; };
+		866E391C1DAB466600C15DD7 /* HMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMTableViewCell.h; sourceTree = "<group>"; };
+		866E391D1DAB466600C15DD7 /* HMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMTableViewCell.m; sourceTree = "<group>"; };
+		866E391E1DAB466600C15DD7 /* HMTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HMTableViewCell.xib; sourceTree = "<group>"; };
+		867AD6701D6A87A2009393AE /* HomeMateSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeMateSDK.framework; path = ../HomeMateSDK.framework; sourceTree = "<group>"; };
+		867AD6761D6AAEF4009393AE /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		867AD67E1D6BED99009393AE /* udis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = udis.png; sourceTree = "<group>"; };
+		867AD67F1D6BED99009393AE /* guide2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guide2.png; sourceTree = "<group>"; };
+		867AD6801D6BED99009393AE /* udislogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = udislogo.png; sourceTree = "<group>"; };
+		867AD6881D6C2434009393AE /* Login2ViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Login2ViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		867AD6A01D6C2434009393AE /* Login2ViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Login2ViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		867AD6AB1D6C2434009393AE /* Login2ViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Login2ViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		867AD6BE1D6C24E5009393AE /* Register2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Register2ViewController.h; path = ../ViewControllers/Register2ViewController.h; sourceTree = "<group>"; };
+		867AD6BF1D6C24E5009393AE /* Register2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Register2ViewController.m; path = ../ViewControllers/Register2ViewController.m; sourceTree = "<group>"; };
+		867AD6C11D6C3D04009393AE /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		867AD6C81D6C3DF9009393AE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		867AD6CA1D6C3E08009393AE /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		867AD6CC1D6C3E13009393AE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		867AD6CE1D6C3E2F009393AE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		867AD6D01D6C3E51009393AE /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		86831BE41D767991006AD408 /* FPWUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPWUserViewController.h; sourceTree = "<group>"; };
+		86831BE51D767991006AD408 /* FPWUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPWUserViewController.m; sourceTree = "<group>"; };
+		86831BE71D767A8E006AD408 /* FPWTestNumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPWTestNumViewController.h; sourceTree = "<group>"; };
+		86831BE81D767A8E006AD408 /* FPWTestNumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPWTestNumViewController.m; sourceTree = "<group>"; };
+		86831BEA1D767F77006AD408 /* ResetPassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetPassWordViewController.h; sourceTree = "<group>"; };
+		86831BEB1D767F77006AD408 /* ResetPassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetPassWordViewController.m; sourceTree = "<group>"; };
+		86831BED1D77D6D1006AD408 /* AddDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddDeviceViewController.h; sourceTree = "<group>"; };
+		86831BEE1D77D6D1006AD408 /* AddDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddDeviceViewController.m; sourceTree = "<group>"; };
+		86831BF01D780DFD006AD408 /* HMDeviceControlManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HMDeviceControlManager.h; path = ../ViewControllers/HMDeviceControlManager.h; sourceTree = "<group>"; };
+		86831BF11D780DFD006AD408 /* HMDeviceControlManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HMDeviceControlManager.m; path = ../ViewControllers/HMDeviceControlManager.m; sourceTree = "<group>"; };
+		86831BF61D780E21006AD408 /* HMDeviceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HMDeviceDetailViewController.h; path = ../ViewControllers/HMDeviceDetailViewController.h; sourceTree = "<group>"; };
+		86831BF71D780E21006AD408 /* HMDeviceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HMDeviceDetailViewController.m; path = ../ViewControllers/HMDeviceDetailViewController.m; sourceTree = "<group>"; };
+		86831BF91D780E68006AD408 /* HMTimerListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HMTimerListViewController.h; path = ../ViewControllers/HMTimerListViewController.h; sourceTree = "<group>"; };
+		86831BFA1D780E68006AD408 /* HMTimerListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HMTimerListViewController.m; path = ../ViewControllers/HMTimerListViewController.m; sourceTree = "<group>"; };
+		86831BFC1D780E7B006AD408 /* HMFloorSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HMFloorSettingsViewController.h; path = ../ViewControllers/HMFloorSettingsViewController.h; sourceTree = "<group>"; };
+		86831BFD1D780E7B006AD408 /* HMFloorSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HMFloorSettingsViewController.m; path = ../ViewControllers/HMFloorSettingsViewController.m; sourceTree = "<group>"; };
+		86831C001D780FA6006AD408 /* HMSwitchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSwitchTableViewCell.h; sourceTree = "<group>"; };
+		86831C011D780FA6006AD408 /* HMSwitchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSwitchTableViewCell.m; sourceTree = "<group>"; };
+		86831C031D780FC8006AD408 /* HMAddEditTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMAddEditTimerViewController.h; sourceTree = "<group>"; };
+		86831C041D780FC8006AD408 /* HMAddEditTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAddEditTimerViewController.m; sourceTree = "<group>"; };
+		8684AC651D6EF154005AC814 /* dq@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dq@2x.png"; sourceTree = "<group>"; };
+		8684AC661D6EF154005AC814 /* zb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zb@2x.png"; sourceTree = "<group>"; };
+		8684AC6A1D6FCFFC005AC814 /* NSString+HM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HM.h"; sourceTree = "<group>"; };
+		8684AC6B1D6FCFFC005AC814 /* NSString+HM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HM.m"; sourceTree = "<group>"; };
+		8684AC6C1D6FCFFC005AC814 /* UIViewController+HM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HM.h"; sourceTree = "<group>"; };
+		8684AC6D1D6FCFFC005AC814 /* UIViewController+HM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HM.m"; sourceTree = "<group>"; };
+		8684AC711D6FD00A005AC814 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		8684AC721D6FD00A005AC814 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		8684AC741D6FD681005AC814 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		8684AC7A1D7007CE005AC814 /* PresonCenterUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PresonCenterUserViewController.h; path = ../ViewControllers/PresonCenterUserViewController.h; sourceTree = "<group>"; };
+		8684AC7B1D7007CE005AC814 /* PresonCenterUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PresonCenterUserViewController.m; path = ../ViewControllers/PresonCenterUserViewController.m; sourceTree = "<group>"; };
+		8684AC7E1D700AB9005AC814 /* MyHostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHostViewController.h; sourceTree = "<group>"; };
+		8684AC7F1D700AB9005AC814 /* MyHostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHostViewController.m; sourceTree = "<group>"; };
+		8684AC811D700AD1005AC814 /* ShareHostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareHostViewController.h; sourceTree = "<group>"; };
+		8684AC821D700AD1005AC814 /* ShareHostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareHostViewController.m; sourceTree = "<group>"; };
+		8684AC841D700B07005AC814 /* ChangePassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePassWordViewController.h; sourceTree = "<group>"; };
+		8684AC851D700B07005AC814 /* ChangePassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePassWordViewController.m; sourceTree = "<group>"; };
+		8684AC881D73C381005AC814 /* TestNumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNumViewController.h; sourceTree = "<group>"; };
+		8684AC891D73C381005AC814 /* TestNumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNumViewController.m; sourceTree = "<group>"; };
+		869B93131DB47F3900361BBB /* ControlDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControlDeviceViewController.h; sourceTree = "<group>"; };
+		869B93141DB47F3900361BBB /* ControlDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControlDeviceViewController.m; sourceTree = "<group>"; };
+		869B93161DB4A1DF00361BBB /* ZLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLAlertView.h; sourceTree = "<group>"; };
+		869B93171DB4A1DF00361BBB /* ZLAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLAlertView.m; sourceTree = "<group>"; };
+		86A62F4D1DDC23AD0044BD31 /* HMControlDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMControlDeviceViewController.h; sourceTree = "<group>"; };
+		86A62F4E1DDC23AD0044BD31 /* HMControlDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMControlDeviceViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		862CB5121D66E598001EA6F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8684AC751D6FD681005AC814 /* libsqlite3.0.tbd in Frameworks */,
+				860B971D1DC99110000997E2 /* MOBFoundation.framework in Frameworks */,
+				860B971F1DC99110000997E2 /* SMS_SDK.framework in Frameworks */,
+				867AD6D11D6C3E51009393AE /* libstdc++.tbd in Frameworks */,
+				867AD6CF1D6C3E2F009393AE /* JavaScriptCore.framework in Frameworks */,
+				867AD6CD1D6C3E13009393AE /* MessageUI.framework in Frameworks */,
+				867AD6CB1D6C3E08009393AE /* libicucore.tbd in Frameworks */,
+				867AD6C91D6C3DF9009393AE /* libz.tbd in Frameworks */,
+				867AD6C21D6C3D04009393AE /* libsqlite3.tbd in Frameworks */,
+				867AD6711D6A87A2009393AE /* HomeMateSDK.framework in Frameworks */,
+				860B971E1DC99110000997E2 /* MOBFoundationEx.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862CB52B1D66E598001EA6F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862CB5361D66E598001EA6F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867AD6851D6C2434009393AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867AD69D1D6C2434009393AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867AD6A81D6C2434009393AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		860B97191DC99110000997E2 /* SMS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				860B971A1DC99110000997E2 /* MOBFoundation.framework */,
+				860B971B1DC99110000997E2 /* MOBFoundationEx.framework */,
+				860B971C1DC99110000997E2 /* SMS_SDK.framework */,
+			);
+			path = SMS_SDK;
+			sourceTree = "<group>";
+		};
+		862CB50C1D66E598001EA6F8 = {
+			isa = PBXGroup;
+			children = (
+				8684AC701D6FD00A005AC814 /* ThirdParts */,
+				8684AC691D6FCFFC005AC814 /* Extension */,
+				862CB5651D6706D2001EA6F8 /* Images */,
+				8684AC7D1D700A75005AC814 /* PersonCenterViews */,
+				86831BE31D7678B0006AD408 /* ForgetPassWordViews */,
+				8684AC871D7011CB005AC814 /* RegisterViews */,
+				86831BFF1D780F27006AD408 /* ControlModule */,
+				866E39161DAB466600C15DD7 /* HMAddDeviceModule */,
+				862CB54B1D66E603001EA6F8 /* ViewControllers */,
+				862CB5171D66E598001EA6F8 /* UdisIntelligentHomeApp */,
+				867AD6D21D6C3EEE009393AE /*  Framework */,
+				862CB55B1D66F40F001EA6F8 /* Utiles */,
+				867AD6D31D6C3F88009393AE /* SDKS */,
+				862CB5311D66E598001EA6F8 /* UdisIntelligentHomeAppTests */,
+				862CB53C1D66E598001EA6F8 /* UdisIntelligentHomeAppUITests */,
+				862CB5161D66E598001EA6F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		862CB5161D66E598001EA6F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				862CB5151D66E598001EA6F8 /* UdisIntelligentHomeApp.app */,
+				862CB52E1D66E598001EA6F8 /* UdisIntelligentHomeAppTests.xctest */,
+				862CB5391D66E598001EA6F8 /* UdisIntelligentHomeAppUITests.xctest */,
+				867AD6881D6C2434009393AE /* Login2ViewController.app */,
+				867AD6A01D6C2434009393AE /* Login2ViewControllerTests.xctest */,
+				867AD6AB1D6C2434009393AE /* Login2ViewControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		862CB5171D66E598001EA6F8 /* UdisIntelligentHomeApp */ = {
+			isa = PBXGroup;
+			children = (
+				862CB51B1D66E598001EA6F8 /* AppDelegate.h */,
+				862CB51C1D66E598001EA6F8 /* AppDelegate.m */,
+				862CB51E1D66E598001EA6F8 /* ViewController.h */,
+				862CB51F1D66E598001EA6F8 /* ViewController.m */,
+				862CB5241D66E598001EA6F8 /* Assets.xcassets */,
+				862CB5261D66E598001EA6F8 /* LaunchScreen.storyboard */,
+				862CB5291D66E598001EA6F8 /* Info.plist */,
+				862CB5181D66E598001EA6F8 /* Supporting Files */,
+			);
+			path = UdisIntelligentHomeApp;
+			sourceTree = "<group>";
+		};
+		862CB5181D66E598001EA6F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				862CB5191D66E598001EA6F8 /* main.m */,
+				867AD6761D6AAEF4009393AE /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		862CB5311D66E598001EA6F8 /* UdisIntelligentHomeAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				862CB5321D66E598001EA6F8 /* UdisIntelligentHomeAppTests.m */,
+				862CB5341D66E598001EA6F8 /* Info.plist */,
+			);
+			path = UdisIntelligentHomeAppTests;
+			sourceTree = "<group>";
+		};
+		862CB53C1D66E598001EA6F8 /* UdisIntelligentHomeAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				862CB53D1D66E598001EA6F8 /* UdisIntelligentHomeAppUITests.m */,
+				862CB53F1D66E598001EA6F8 /* Info.plist */,
+			);
+			path = UdisIntelligentHomeAppUITests;
+			sourceTree = "<group>";
+		};
+		862CB54B1D66E603001EA6F8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				862CB54F1D66E65B001EA6F8 /* MainViewController.h */,
+				862CB5501D66E65B001EA6F8 /* MainViewController.m */,
+				869B93131DB47F3900361BBB /* ControlDeviceViewController.h */,
+				869B93141DB47F3900361BBB /* ControlDeviceViewController.m */,
+				86831BED1D77D6D1006AD408 /* AddDeviceViewController.h */,
+				86831BEE1D77D6D1006AD408 /* AddDeviceViewController.m */,
+				862CB5521D66E68C001EA6F8 /* LoginViewController.h */,
+				862CB5531D66E68C001EA6F8 /* LoginViewController.m */,
+				862CB5551D66E703001EA6F8 /* WelcomeViewController.h */,
+				862CB5561D66E703001EA6F8 /* WelcomeViewController.m */,
+				862CB5581D66E871001EA6F8 /* PersonalCentreViewController.h */,
+				862CB5591D66E871001EA6F8 /* PersonalCentreViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		862CB55B1D66F40F001EA6F8 /* Utiles */ = {
+			isa = PBXGroup;
+			children = (
+				862CB55C1D66F42A001EA6F8 /* MyUtiles.h */,
+				862CB55D1D66F42A001EA6F8 /* MyUtiles.m */,
+			);
+			path = Utiles;
+			sourceTree = "<group>";
+		};
+		862CB5651D6706D2001EA6F8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8684AC651D6EF154005AC814 /* dq@2x.png */,
+				8684AC661D6EF154005AC814 /* zb@2x.png */,
+				867AD67E1D6BED99009393AE /* udis.png */,
+				867AD67F1D6BED99009393AE /* guide2.png */,
+				867AD6801D6BED99009393AE /* udislogo.png */,
+				862CB5681D670A34001EA6F8 /* arrow_left.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		866E39161DAB466600C15DD7 /* HMAddDeviceModule */ = {
+			isa = PBXGroup;
+			children = (
+				866E39171DAB466600C15DD7 /* HMSearchDeviceManager.h */,
+				866E39181DAB466600C15DD7 /* HMSearchDeviceManager.m */,
+				866E39191DAB466600C15DD7 /* HMSearchDeviceVc.h */,
+				866E391A1DAB466600C15DD7 /* HMSearchDeviceVc.m */,
+				866E391B1DAB466600C15DD7 /* HMSearchDeviceVc.xib */,
+				866E391C1DAB466600C15DD7 /* HMTableViewCell.h */,
+				866E391D1DAB466600C15DD7 /* HMTableViewCell.m */,
+				866E391E1DAB466600C15DD7 /* HMTableViewCell.xib */,
+			);
+			path = HMAddDeviceModule;
+			sourceTree = "<group>";
+		};
+		867AD6D21D6C3EEE009393AE /*  Framework */ = {
+			isa = PBXGroup;
+			children = (
+				8684AC741D6FD681005AC814 /* libsqlite3.0.tbd */,
+				867AD6D01D6C3E51009393AE /* libstdc++.tbd */,
+				867AD6CE1D6C3E2F009393AE /* JavaScriptCore.framework */,
+				867AD6CC1D6C3E13009393AE /* MessageUI.framework */,
+				867AD6CA1D6C3E08009393AE /* libicucore.tbd */,
+				867AD6C81D6C3DF9009393AE /* libz.tbd */,
+				867AD6C11D6C3D04009393AE /* libsqlite3.tbd */,
+			);
+			path = " Framework";
+			sourceTree = "<group>";
+		};
+		867AD6D31D6C3F88009393AE /* SDKS */ = {
+			isa = PBXGroup;
+			children = (
+				860B97191DC99110000997E2 /* SMS_SDK */,
+				867AD6701D6A87A2009393AE /* HomeMateSDK.framework */,
+			);
+			path = SDKS;
+			sourceTree = "<group>";
+		};
+		86831BE31D7678B0006AD408 /* ForgetPassWordViews */ = {
+			isa = PBXGroup;
+			children = (
+				86831BE41D767991006AD408 /* FPWUserViewController.h */,
+				86831BE51D767991006AD408 /* FPWUserViewController.m */,
+				86831BE71D767A8E006AD408 /* FPWTestNumViewController.h */,
+				86831BE81D767A8E006AD408 /* FPWTestNumViewController.m */,
+				86831BEA1D767F77006AD408 /* ResetPassWordViewController.h */,
+				86831BEB1D767F77006AD408 /* ResetPassWordViewController.m */,
+			);
+			path = ForgetPassWordViews;
+			sourceTree = "<group>";
+		};
+		86831BFF1D780F27006AD408 /* ControlModule */ = {
+			isa = PBXGroup;
+			children = (
+				86831BF01D780DFD006AD408 /* HMDeviceControlManager.h */,
+				86831BF11D780DFD006AD408 /* HMDeviceControlManager.m */,
+				8607A47D1D9CFEEE00E46F18 /* HMDeviceListCell.h */,
+				8607A47E1D9CFEEE00E46F18 /* HMDeviceListCell.m */,
+				86831BF61D780E21006AD408 /* HMDeviceDetailViewController.h */,
+				86831BF71D780E21006AD408 /* HMDeviceDetailViewController.m */,
+				86A62F4D1DDC23AD0044BD31 /* HMControlDeviceViewController.h */,
+				86A62F4E1DDC23AD0044BD31 /* HMControlDeviceViewController.m */,
+				86831BFC1D780E7B006AD408 /* HMFloorSettingsViewController.h */,
+				86831BFD1D780E7B006AD408 /* HMFloorSettingsViewController.m */,
+				86831BF91D780E68006AD408 /* HMTimerListViewController.h */,
+				86831BFA1D780E68006AD408 /* HMTimerListViewController.m */,
+				86831C011D780FA6006AD408 /* HMSwitchTableViewCell.m */,
+				86831C001D780FA6006AD408 /* HMSwitchTableViewCell.h */,
+				86831C031D780FC8006AD408 /* HMAddEditTimerViewController.h */,
+				86831C041D780FC8006AD408 /* HMAddEditTimerViewController.m */,
+			);
+			path = ControlModule;
+			sourceTree = "<group>";
+		};
+		8684AC691D6FCFFC005AC814 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				869B93161DB4A1DF00361BBB /* ZLAlertView.h */,
+				869B93171DB4A1DF00361BBB /* ZLAlertView.m */,
+				8684AC6A1D6FCFFC005AC814 /* NSString+HM.h */,
+				8684AC6B1D6FCFFC005AC814 /* NSString+HM.m */,
+				8684AC6C1D6FCFFC005AC814 /* UIViewController+HM.h */,
+				8684AC6D1D6FCFFC005AC814 /* UIViewController+HM.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8684AC701D6FD00A005AC814 /* ThirdParts */ = {
+			isa = PBXGroup;
+			children = (
+				8684AC711D6FD00A005AC814 /* MBProgressHUD.h */,
+				8684AC721D6FD00A005AC814 /* MBProgressHUD.m */,
+			);
+			path = ThirdParts;
+			sourceTree = "<group>";
+		};
+		8684AC7D1D700A75005AC814 /* PersonCenterViews */ = {
+			isa = PBXGroup;
+			children = (
+				8684AC7A1D7007CE005AC814 /* PresonCenterUserViewController.h */,
+				8684AC7B1D7007CE005AC814 /* PresonCenterUserViewController.m */,
+				866E39131DA89A7800C15DD7 /* CheckViewController.h */,
+				866E39141DA89A7800C15DD7 /* CheckViewController.m */,
+				866E39101DA898F900C15DD7 /* ChangeUserNameViewController.h */,
+				866E39111DA898F900C15DD7 /* ChangeUserNameViewController.m */,
+				8684AC7E1D700AB9005AC814 /* MyHostViewController.h */,
+				8684AC7F1D700AB9005AC814 /* MyHostViewController.m */,
+				8684AC811D700AD1005AC814 /* ShareHostViewController.h */,
+				8684AC821D700AD1005AC814 /* ShareHostViewController.m */,
+				8684AC841D700B07005AC814 /* ChangePassWordViewController.h */,
+				8684AC851D700B07005AC814 /* ChangePassWordViewController.m */,
+			);
+			path = PersonCenterViews;
+			sourceTree = "<group>";
+		};
+		8684AC871D7011CB005AC814 /* RegisterViews */ = {
+			isa = PBXGroup;
+			children = (
+				862CB5621D66FE22001EA6F8 /* RegisterViewController.h */,
+				862CB5631D66FE22001EA6F8 /* RegisterViewController.m */,
+				8684AC881D73C381005AC814 /* TestNumViewController.h */,
+				8684AC891D73C381005AC814 /* TestNumViewController.m */,
+				867AD6BE1D6C24E5009393AE /* Register2ViewController.h */,
+				867AD6BF1D6C24E5009393AE /* Register2ViewController.m */,
+			);
+			path = RegisterViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		862CB5141D66E598001EA6F8 /* UdisIntelligentHomeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862CB5421D66E598001EA6F8 /* Build configuration list for PBXNativeTarget "UdisIntelligentHomeApp" */;
+			buildPhases = (
+				862CB5111D66E598001EA6F8 /* Sources */,
+				862CB5121D66E598001EA6F8 /* Frameworks */,
+				862CB5131D66E598001EA6F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UdisIntelligentHomeApp;
+			productName = UdisIntelligentHomeApp;
+			productReference = 862CB5151D66E598001EA6F8 /* UdisIntelligentHomeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		862CB52D1D66E598001EA6F8 /* UdisIntelligentHomeAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862CB5451D66E598001EA6F8 /* Build configuration list for PBXNativeTarget "UdisIntelligentHomeAppTests" */;
+			buildPhases = (
+				862CB52A1D66E598001EA6F8 /* Sources */,
+				862CB52B1D66E598001EA6F8 /* Frameworks */,
+				862CB52C1D66E598001EA6F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				862CB5301D66E598001EA6F8 /* PBXTargetDependency */,
+			);
+			name = UdisIntelligentHomeAppTests;
+			productName = UdisIntelligentHomeAppTests;
+			productReference = 862CB52E1D66E598001EA6F8 /* UdisIntelligentHomeAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		862CB5381D66E598001EA6F8 /* UdisIntelligentHomeAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 862CB5481D66E598001EA6F8 /* Build configuration list for PBXNativeTarget "UdisIntelligentHomeAppUITests" */;
+			buildPhases = (
+				862CB5351D66E598001EA6F8 /* Sources */,
+				862CB5361D66E598001EA6F8 /* Frameworks */,
+				862CB5371D66E598001EA6F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				862CB53B1D66E598001EA6F8 /* PBXTargetDependency */,
+			);
+			name = UdisIntelligentHomeAppUITests;
+			productName = UdisIntelligentHomeAppUITests;
+			productReference = 862CB5391D66E598001EA6F8 /* UdisIntelligentHomeAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		867AD6871D6C2434009393AE /* Login2ViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 867AD6B21D6C2434009393AE /* Build configuration list for PBXNativeTarget "Login2ViewController" */;
+			buildPhases = (
+				867AD6841D6C2434009393AE /* Sources */,
+				867AD6851D6C2434009393AE /* Frameworks */,
+				867AD6861D6C2434009393AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Login2ViewController;
+			productName = Login2ViewController;
+			productReference = 867AD6881D6C2434009393AE /* Login2ViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		867AD69F1D6C2434009393AE /* Login2ViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 867AD6B51D6C2434009393AE /* Build configuration list for PBXNativeTarget "Login2ViewControllerTests" */;
+			buildPhases = (
+				867AD69C1D6C2434009393AE /* Sources */,
+				867AD69D1D6C2434009393AE /* Frameworks */,
+				867AD69E1D6C2434009393AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				867AD6A21D6C2434009393AE /* PBXTargetDependency */,
+			);
+			name = Login2ViewControllerTests;
+			productName = Login2ViewControllerTests;
+			productReference = 867AD6A01D6C2434009393AE /* Login2ViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		867AD6AA1D6C2434009393AE /* Login2ViewControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 867AD6B81D6C2434009393AE /* Build configuration list for PBXNativeTarget "Login2ViewControllerUITests" */;
+			buildPhases = (
+				867AD6A71D6C2434009393AE /* Sources */,
+				867AD6A81D6C2434009393AE /* Frameworks */,
+				867AD6A91D6C2434009393AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				867AD6AD1D6C2434009393AE /* PBXTargetDependency */,
+			);
+			name = Login2ViewControllerUITests;
+			productName = Login2ViewControllerUITests;
+			productReference = 867AD6AB1D6C2434009393AE /* Login2ViewControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		862CB50D1D66E598001EA6F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = UDIS;
+				TargetAttributes = {
+					862CB5141D66E598001EA6F8 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 87XTJH47M9;
+					};
+					862CB52D1D66E598001EA6F8 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 862CB5141D66E598001EA6F8;
+					};
+					862CB5381D66E598001EA6F8 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 862CB5141D66E598001EA6F8;
+					};
+					867AD6871D6C2434009393AE = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					867AD69F1D6C2434009393AE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 867AD6871D6C2434009393AE;
+					};
+					867AD6AA1D6C2434009393AE = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 867AD6871D6C2434009393AE;
+					};
+				};
+			};
+			buildConfigurationList = 862CB5101D66E598001EA6F8 /* Build configuration list for PBXProject "UdisIntelligentHomeApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 862CB50C1D66E598001EA6F8;
+			productRefGroup = 862CB5161D66E598001EA6F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				862CB5141D66E598001EA6F8 /* UdisIntelligentHomeApp */,
+				862CB52D1D66E598001EA6F8 /* UdisIntelligentHomeAppTests */,
+				862CB5381D66E598001EA6F8 /* UdisIntelligentHomeAppUITests */,
+				867AD6871D6C2434009393AE /* Login2ViewController */,
+				867AD69F1D6C2434009393AE /* Login2ViewControllerTests */,
+				867AD6AA1D6C2434009393AE /* Login2ViewControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		862CB5131D66E598001EA6F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				867AD6831D6BED99009393AE /* udislogo.png in Resources */,
+				862CB5281D66E598001EA6F8 /* LaunchScreen.storyboard in Resources */,
+				867AD6821D6BED99009393AE /* guide2.png in Resources */,
+				8684AC671D6EF154005AC814 /* dq@2x.png in Resources */,
+				866E39231DAB466600C15DD7 /* HMTableViewCell.xib in Resources */,
+				867AD6811D6BED99009393AE /* udis.png in Resources */,
+				862CB5251D66E598001EA6F8 /* Assets.xcassets in Resources */,
+				866E39211DAB466600C15DD7 /* HMSearchDeviceVc.xib in Resources */,
+				862CB5691D670A34001EA6F8 /* arrow_left.png in Resources */,
+				8684AC681D6EF154005AC814 /* zb@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862CB52C1D66E598001EA6F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862CB5371D66E598001EA6F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867AD6861D6C2434009393AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867AD69E1D6C2434009393AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867AD6A91D6C2434009393AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		862CB5111D66E598001EA6F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8684AC6E1D6FCFFC005AC814 /* NSString+HM.m in Sources */,
+				86831BE91D767A8E006AD408 /* FPWTestNumViewController.m in Sources */,
+				8684AC861D700B07005AC814 /* ChangePassWordViewController.m in Sources */,
+				86831BFE1D780E7C006AD408 /* HMFloorSettingsViewController.m in Sources */,
+				862CB5201D66E598001EA6F8 /* ViewController.m in Sources */,
+				869B93181DB4A1DF00361BBB /* ZLAlertView.m in Sources */,
+				862CB55E1D66F42A001EA6F8 /* MyUtiles.m in Sources */,
+				86831BEC1D767F77006AD408 /* ResetPassWordViewController.m in Sources */,
+				862CB51D1D66E598001EA6F8 /* AppDelegate.m in Sources */,
+				866E391F1DAB466600C15DD7 /* HMSearchDeviceManager.m in Sources */,
+				8684AC8A1D73C381005AC814 /* TestNumViewController.m in Sources */,
+				8684AC831D700AD1005AC814 /* ShareHostViewController.m in Sources */,
+				8684AC7C1D7007CE005AC814 /* PresonCenterUserViewController.m in Sources */,
+				866E39221DAB466600C15DD7 /* HMTableViewCell.m in Sources */,
+				862CB51A1D66E598001EA6F8 /* main.m in Sources */,
+				866E39121DA898F900C15DD7 /* ChangeUserNameViewController.m in Sources */,
+				86A62F4F1DDC23AD0044BD31 /* HMControlDeviceViewController.m in Sources */,
+				8684AC801D700AB9005AC814 /* MyHostViewController.m in Sources */,
+				86831C051D780FC8006AD408 /* HMAddEditTimerViewController.m in Sources */,
+				8684AC6F1D6FCFFC005AC814 /* UIViewController+HM.m in Sources */,
+				866E39151DA89A7800C15DD7 /* CheckViewController.m in Sources */,
+				86831BE61D767991006AD408 /* FPWUserViewController.m in Sources */,
+				866E39201DAB466600C15DD7 /* HMSearchDeviceVc.m in Sources */,
+				86831C021D780FA6006AD408 /* HMSwitchTableViewCell.m in Sources */,
+				86831BFB1D780E68006AD408 /* HMTimerListViewController.m in Sources */,
+				867AD6C01D6C24E5009393AE /* Register2ViewController.m in Sources */,
+				862CB5641D66FE22001EA6F8 /* RegisterViewController.m in Sources */,
+				86831BEF1D77D6D1006AD408 /* AddDeviceViewController.m in Sources */,
+				862CB55A1D66E871001EA6F8 /* PersonalCentreViewController.m in Sources */,
+				8684AC731D6FD00A005AC814 /* MBProgressHUD.m in Sources */,
+				86831BF81D780E21006AD408 /* HMDeviceDetailViewController.m in Sources */,
+				862CB5511D66E65B001EA6F8 /* MainViewController.m in Sources */,
+				869B93151DB47F3900361BBB /* ControlDeviceViewController.m in Sources */,
+				862CB5541D66E68C001EA6F8 /* LoginViewController.m in Sources */,
+				8607A47F1D9CFEEE00E46F18 /* HMDeviceListCell.m in Sources */,
+				862CB5571D66E703001EA6F8 /* WelcomeViewController.m in Sources */,
+				86831BF21D780DFD006AD408 /* HMDeviceControlManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862CB52A1D66E598001EA6F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862CB5331D66E598001EA6F8 /* UdisIntelligentHomeAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		862CB5351D66E598001EA6F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862CB53E1D66E598001EA6F8 /* UdisIntelligentHomeAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867AD6841D6C2434009393AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867AD69C1D6C2434009393AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		867AD6A71D6C2434009393AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		862CB5301D66E598001EA6F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 862CB5141D66E598001EA6F8 /* UdisIntelligentHomeApp */;
+			targetProxy = 862CB52F1D66E598001EA6F8 /* PBXContainerItemProxy */;
+		};
+		862CB53B1D66E598001EA6F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 862CB5141D66E598001EA6F8 /* UdisIntelligentHomeApp */;
+			targetProxy = 862CB53A1D66E598001EA6F8 /* PBXContainerItemProxy */;
+		};
+		867AD6A21D6C2434009393AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 867AD6871D6C2434009393AE /* Login2ViewController */;
+			targetProxy = 867AD6A11D6C2434009393AE /* PBXContainerItemProxy */;
+		};
+		867AD6AD1D6C2434009393AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 867AD6871D6C2434009393AE /* Login2ViewController */;
+			targetProxy = 867AD6AC1D6C2434009393AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		862CB5261D66E598001EA6F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				862CB5271D66E598001EA6F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		862CB5401D66E598001EA6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UdisIntelligentHomeApp/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		862CB5411D66E598001EA6F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UdisIntelligentHomeApp/PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		862CB5431D66E598001EA6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SDK/SMS_SDK",
+					"$(PROJECT_DIR)/SMS_SDK",
+					"$(PROJECT_DIR)/SDKS/SMS_SDK",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UdisIntelligentHomeApp/PrefixHeader.pch";
+				INFOPLIST_FILE = UdisIntelligentHomeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = Udis.UdisIntelligentHomeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		862CB5441D66E598001EA6F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/SDK/SMS_SDK",
+					"$(PROJECT_DIR)/SMS_SDK",
+					"$(PROJECT_DIR)/SDKS/SMS_SDK",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/UdisIntelligentHomeApp/PrefixHeader.pch";
+				INFOPLIST_FILE = UdisIntelligentHomeApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = Udis.UdisIntelligentHomeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		862CB5461D66E598001EA6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UdisIntelligentHomeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Udis.UdisIntelligentHomeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UdisIntelligentHomeApp.app/UdisIntelligentHomeApp";
+			};
+			name = Debug;
+		};
+		862CB5471D66E598001EA6F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UdisIntelligentHomeAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Udis.UdisIntelligentHomeAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UdisIntelligentHomeApp.app/UdisIntelligentHomeApp";
+			};
+			name = Release;
+		};
+		862CB5491D66E598001EA6F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UdisIntelligentHomeAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Udis.UdisIntelligentHomeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UdisIntelligentHomeApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		862CB54A1D66E598001EA6F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UdisIntelligentHomeAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Udis.UdisIntelligentHomeAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = UdisIntelligentHomeApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		867AD6B31D6C2434009393AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Login2ViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Udis.Login2ViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		867AD6B41D6C2434009393AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Login2ViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Udis.Login2ViewController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		867AD6B61D6C2434009393AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Login2ViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Udis.Login2ViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Login2ViewController.app/Login2ViewController";
+			};
+			name = Debug;
+		};
+		867AD6B71D6C2434009393AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Login2ViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Udis.Login2ViewControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Login2ViewController.app/Login2ViewController";
+			};
+			name = Release;
+		};
+		867AD6B91D6C2434009393AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Login2ViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Udis.Login2ViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Login2ViewController;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		867AD6BA1D6C2434009393AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = Login2ViewControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Udis.Login2ViewControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Login2ViewController;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		862CB5101D66E598001EA6F8 /* Build configuration list for PBXProject "UdisIntelligentHomeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862CB5401D66E598001EA6F8 /* Debug */,
+				862CB5411D66E598001EA6F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		862CB5421D66E598001EA6F8 /* Build configuration list for PBXNativeTarget "UdisIntelligentHomeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862CB5431D66E598001EA6F8 /* Debug */,
+				862CB5441D66E598001EA6F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		862CB5451D66E598001EA6F8 /* Build configuration list for PBXNativeTarget "UdisIntelligentHomeAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862CB5461D66E598001EA6F8 /* Debug */,
+				862CB5471D66E598001EA6F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		862CB5481D66E598001EA6F8 /* Build configuration list for PBXNativeTarget "UdisIntelligentHomeAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				862CB5491D66E598001EA6F8 /* Debug */,
+				862CB54A1D66E598001EA6F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		867AD6B21D6C2434009393AE /* Build configuration list for PBXNativeTarget "Login2ViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				867AD6B31D6C2434009393AE /* Debug */,
+				867AD6B41D6C2434009393AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		867AD6B51D6C2434009393AE /* Build configuration list for PBXNativeTarget "Login2ViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				867AD6B61D6C2434009393AE /* Debug */,
+				867AD6B71D6C2434009393AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		867AD6B81D6C2434009393AE /* Build configuration list for PBXNativeTarget "Login2ViewControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				867AD6B91D6C2434009393AE /* Debug */,
+				867AD6BA1D6C2434009393AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 862CB50D1D66E598001EA6F8 /* Project object */;
+}
